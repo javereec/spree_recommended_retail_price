@@ -1,0 +1,7 @@
+<!-- insert_bottom '[data-hook="admin_product_form_right"]' -->
+
+    <%= f.field_container :recommended_retail_price do %>
+      <%= f.label :recommended_retail_price, raw(Spree.t(:recommended_retail_price)) %>
+      <%= f.text_field :recommended_retail_price, :value => number_to_currency(@product.recommended_retail_price, :unit => '') %>
+      <%= f.error_message_on :recommended_retail_price %>
+    <% end %>
