@@ -18,5 +18,10 @@ module SpreeRecommendedRetailPrice
     end
 
     config.to_prepare &method(:activate).to_proc
+
+    config.after_initialize do
+      Spree::PermittedAttributes.product_attributes << :recommended_retail_price
+      Spree::Api::ApiHelpers.product_attributes.push :recommended_retail_price
+    end
   end
 end
