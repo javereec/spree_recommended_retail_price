@@ -1,6 +1,6 @@
 module Spree
   Variant.class_eval do
-    validates :recommended_retail_price, numericality: { greater_than: 0, allow_nil: true }
+    validates :recommended_retail_price, numericality: { greater_than_or_equal_to: 0, allow_nil: true }
 
     # Alias attributes for easy access
     # You have to use original column name when searching though
