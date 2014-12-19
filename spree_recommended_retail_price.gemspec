@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_recommended_retail_price'
-  s.version     = '2.2.0'
+  s.version     = '2.4.0'
   s.summary     = 'Adds recommended retail price (RRP) / manufacturer suggested retail price to variant'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.2.0'
+  s.add_dependency 'spree_core', '~> 2.4.0'
   s.add_dependency 'compass-rails'
 
   s.add_development_dependency 'byebug'
