@@ -1,7 +1,13 @@
 SpreeRecommendedRetailPrice
 ===========================
 
-Introduction goes here.
+This gems adds the recommended retail price on each product/variant. This price can be accessed with:
+
+* recommended_retail_price
+* rrp
+* msrp
+
+Method `visible_customer_discount` can be used to display the discount percentage of the sold to price against the rrp.
 
 Installation
 ------------
